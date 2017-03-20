@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Math Functions</title>
+</head>
+<body>
+	<script>
+		function Sum(a, b) 
+		{
+			var sum = (a + b);
+			return (sum);
+		}
+		function Diff(a, b) 
+		{
+			var diff = (a - b);
+			return (diff);
+		}
+		function Multi(a, b)
+		{
+			var multi = (a * b);
+			return (multi);
+		}
+		function Division(a, b)
+		{
+			var division = (a / b);
+			return (division);
+		}
+		var a = parseInt(prompt('введите первое число'));
+		var b = parseInt(prompt('введите второе число'));
+		sum = Sum(a, b);
+		diff = Diff(a, b);
+		multi = Multi(a, b);
+		division = Division(a, b);
+		alert('Сумма: ' + sum + ". Разность: " + diff + '. Произведение: ' + multi + '. Частное: ' + division + '.')
+	</script>
+</body>
+</html>
