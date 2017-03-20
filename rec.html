@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>рекурсия</title>
+</head>
+<body>
+	<script>
+		function power(val, pow)
+		{
+			if (pow != 1) {
+				var result = val * power(val, pow - 1);
+				return(result);
+			}
+			else {
+				return(val);
+			}
+		}
+		var val = parseInt(prompt('Введите положительное натуральное число: '));
+		var pow = parseInt(prompt('Введите значение степени числа(положительное натуральное число): '));
+		var result = power(val, pow);
+		alert('Результат равен: ' + result);
+	</script>
+</body>
+</html>
